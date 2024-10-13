@@ -7,7 +7,7 @@ res.json({
     Message:"Olá"});
 });
 app.get('/produtos',(req, res)=>{
-req.json([{nome:"celular"},{nome:"tv"},{nome:"sofá"}])
+    res.json([{nome:"celular"},{nome:"tv"},{nome:"sofá"}])
 });
 const PORT=3000
 app.listen(process.env.PORT||PORT,()=>{
